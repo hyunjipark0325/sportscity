@@ -3,6 +3,7 @@ package wg.kim.boardtest.board.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 
 import wg.kim.boardtest.board.dto.SignDto;
 import wg.kim.boardtest.board.service.SignService;
@@ -56,6 +57,7 @@ public class MainController {
 
         return "contact";
     }
+	
 	@GetMapping("/game")
     public String game() {
         System.out.println("game메서드 이동 ");
@@ -92,4 +94,7 @@ public class MainController {
 
         return "pswfind";
     }
+
+	 
+
 }

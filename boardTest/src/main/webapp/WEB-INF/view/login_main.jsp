@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <% String nickname= (String)session.getAttribute("nickname"); %>
-
+<% String email= (String)session.getAttribute("email"); %>
 
 <!DOCTYPE html>
 <html>
@@ -56,8 +56,8 @@ const healthmap = () => {
 const with_board = () => {
 	location.href("with_board");
 }
-const contact = () => {
-	location.href("contact");
+const login_contact = () => {
+	location.href("login_contact");
 }
 </script>
 </head>
@@ -127,7 +127,7 @@ const contact = () => {
             </a>
           </li>
           <li class="sub-menu">
-            <a href="contact">
+            <a href="login_contact">
               <span>문의사항</span>
             </a>
           </li>

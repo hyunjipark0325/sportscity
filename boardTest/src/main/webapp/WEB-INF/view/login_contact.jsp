@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<% String nickname= (String)session.getAttribute("nickname"); %>
+<% String email= (String)session.getAttribute("email"); %>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,8 +25,8 @@
 <link href="css/style.css" rel="stylesheet">
 <link href="css/style-responsive.css" rel="stylesheet">
 <script type="text/javascript">
-const main = () => {
-	location.href("main");
+const login_main = () => {
+	location.href("login_main");
 }
 const signup = () => {
 	location.href("signup");
@@ -46,8 +49,8 @@ const healthmap = () => {
 const with_board = () => {
 	location.href("with_board");
 }
-const contact = () => {
-	location.href("contact");
+const login_contact = () => {
+	location.href("login_contact");
 }
 </script>
 </head>
@@ -62,7 +65,7 @@ const contact = () => {
         <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
       </div>
       <!--logo start-->
-      <a href="main" class="logo">체육특별시</a>
+      <a href="login_main" class="logo">체육특별시</a>
       <!--logo end-->
       <div class="top-menu">
         <ul class="nav pull-right top-menu">
@@ -116,7 +119,7 @@ const contact = () => {
             </a>
           </li>
           <li class="sub-menu">
-            <a class="active" href="contact">
+            <a class="active" href="login_contact">
               <span>문의사항</span>
             </a>
           </li>
@@ -146,13 +149,11 @@ const contact = () => {
 					</select>
 	            <div class="mb-3">
 	            	<label>닉네임</label>
-	                <input type="name" name="name" class="form-control" id="contact-name" placeholder="홍길동" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required>
-	                <div class="invalid-feedback">닉네임을 입력해주세요.</div>
+	                <input type="name" name="name" value="<%=nickname%>" class="form-control" id="contact-name" >
 	            </div>
               	<div class="mb-3">
               		<label>이메일</label>
-               		<input type="email" name="email" class="form-control" id="contact-email" placeholder="user@email.com" data-rule="email" data-msg="Please enter a valid email"required>
-                	<div class="invalid-feedback">이메일을 입력해주세요.</div>
+               		<input type="email" name="email" class="form-control" id="contact-email" placeholder="user@email.com" data-rule="email" data-msg="Please enter a valid email" required>
               	</div>
 	            <div class="mb-3">
 	              	<label>제목</label>
