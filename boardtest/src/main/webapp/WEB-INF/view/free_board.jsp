@@ -134,6 +134,7 @@ const contact = () => {
 				<div class="row mb">
 					<!-- page start-->
 					<div class="content-panel">
+					<button type="button" class="btn pull-right btn-theme btn-lg"><a href="free_board_write">+쓰기</a></button>
 						<div class="adv-table">
 							<table cellpadding="0" cellspacing="0" border="0"
 								class="table table-striped table-advance table-hover"
@@ -149,7 +150,7 @@ const contact = () => {
 								</thead>
 								<tbody>
 									<tr>
-										<td><a href="#">농구하자</a></td>
+										<td><a href="free_board_view">농구하자</a></td>
 										<td>마이클조던</td>
 										<td>2022.08.02</td>
 										<td><span class="label label-theme label">1</span></td>

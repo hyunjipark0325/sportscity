@@ -27,13 +27,12 @@
 	rel="stylesheet"
 	integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
 	crossorigin="anonymous">
-
 <!--external css-->
+<script src="https://kit.fontawesome.com/a4d1296ef7.js" crossorigin="anonymous"></script>
 <link href="lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
 <!-- Custom styles for this template -->
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet"
-	href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
 <link href="css/style.css" rel="stylesheet">
 <link href="css/style-responsive.css" rel="stylesheet">
 <script type="text/javascript">
@@ -65,6 +64,7 @@ const contact = () => {
 	location.href("contact");
 }
 </script>
+
 </head>
 
 <body>
@@ -139,109 +139,60 @@ const contact = () => {
 					<div class="row mb">
 						<!-- page start-->
 						<div class="content-panel">
-							<div class="ml-3">
-								<a class="btn btn-theme btn-lg m-3" href="#">8.5 /금</a> <a
-									class="btn btn-light btn-lg m-3" href="#">8.6/토</a> <a
-									class="btn btn-light btn-lg m-3" href="#">8.7/일</a> <a
-									class="btn btn-light btn-lg m-3" href="#">8.8/월</a> <a
-									class="btn btn-light btn-lg m-3" href="#">8.9/화</a> <a
-									class="btn btn-light btn-lg m-3" href="#">8.10/수</a>
-							</div>
-							<button type="button" class="btn pull-right btn-theme btn-lg"><a href="with_board_write">+쓰기</a></button>
-							<div class="adv-table">
-								<table cellpadding="0" cellspacing="0" border="0"
-									class="table table-striped table-advance table-hover"
-									id="hidden-table-info">
-									<thead>
-										<tr>
-											<th>모임시간</th>
-											<th>모임명</th>
-											<th>성별</th>
-											<th>정원</th>
-											<th>마감여부</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>18:00</td>
-											<td>동탄 치동천 런닝같이해요</td>
-											<td>남녀모두</td>
-											<td>4/5명</td>
-											<td><button type="button" class="btn btn-danger btn-sm"><a href="with_board_view">마감임박</a></button></td>
-										</tr>
-										<tr>
-											<td>18:00</td>
-											<td>반포한강공원 철봉ㄱㄱ</td>
-											<td>남녀모두</td>
-											<td>5/5명</td>
-											<td><button type="button" class="btn btn-light btn-sm">마감완료</button></td>
-										</tr>
-										<tr>
-											<td>18:30</td>
-											<td>용인 참스포츠 클럽 풋살장</td>
-											<td>남자</td>
-											<td>5/12명</td>
-											<td><button type="button" class="btn btn-theme btn-sm">참가가능</button></td>
-										</tr>
-										<tr>
-											<td>19:00</td>
-											<td>땡땡공원에서 배드민턴쳐용</td>
-											<td>남녀모두</td>
-											<td>4/4명</td>
-											<td><button type="button" class="btn btn-light btn-sm">마감완료</button></td>
-										</tr>
-										<tr>
-											<td>19:30</td>
-											<td>한강자전거 같이타실분</td>
-											<td>여자</td>
-											<td>1/4명</td>
-											<td><button type="button" class="btn btn-theme btn-sm">참가가능</button></td>
-										</tr>
-										<tr>
-											<td>19:30</td>
-											<td>여의도 한강공원 산책</td>
-											<td>남녀모두</td>
-											<td>4/5명</td>
-											<td><button type="button" class="btn btn-danger btn-sm">마감임박</button></td>
-										</tr>
-										<tr>
-											<td>20:30</td>
-											<td>의정부 축구장</td>
-											<td>남자</td>
-											<td>5/12명</td>
-											<td><button type="button" class="btn btn-theme btn-sm">참가가능</button></td>
-										</tr>
-										<tr>
-											<td>19:00</td>
-											<td>중랑천 달리기 하실분</td>
-											<td>남녀모두</td>
-											<td>2/2명</td>
-											<td><button type="button" class="btn btn-light btn-sm">마감완료</button></td>
-										</tr>
-										<tr>
-											<td>20:00</td>
-											<td>무봉산 야간산행</td>
-											<td>남녀모두</td>
-											<td>3/3명</td>
-											<td><button type="button" class="btn btn-light btn-sm">마감완료</button></td>
-										</tr>
-										<tr>
-											<td>21:30</td>
-											<td>한강자전거 같이타실분</td>
-											<td>여자</td>
-											<td>1/4명</td>
-											<td><button type="button" class="btn btn-theme btn-sm">참가가능</button></td>
-										</tr>
-										<tr>
-											<td>20:30</td>
-											<td>한강자전거 같이타실분</td>
-											<td>여자</td>
-											<td>1/4명</td>
-											<td><button type="button" class="btn btn-theme btn-sm">참가가능</button></td>
-										</tr>
-									</tbody>
-								</table>
-							</div>			
+						<form action="#" class="form-horizontal style-form validation-form" method="" novalidate>
+			               <div>			              
+			               	<h3>동탄 치동천 런닝같이해요</h3>
+			               </div> 	
+			               <div><span>닉네임</span><span>/</span><span>5분전</span><span>/</span><span>댓글0 </span></div><hr>
+			               <div>
+			               <table style="width:500px; height:50px; font-weight:bold;">
+			                <tbody> 
+			                  <tr>
+			                    <td style="text-align:left"><i class="fa-regular fa-calendar-check"></i> 2022.8.5</td>
+			                    <td style="text-align:left"><i class="fa-regular fa-clock"></i> 18:00</td>
+			                    <td style="text-align:left"><i class="fa-solid fa-location-dot"></i> 경기도 화성시</td>
+			                    <td style="text-align:left"></td>
+			                  </tr>
+			                  <tr>
+			                    <td style="text-align:left"><i class="fa-regular fa-futbol"></i> 런닝</td>
+			                    <td style="text-align:left"><i class="fa-solid fa-venus-double"></i> 남녀모두</td>
+			                    <td style="text-align:left"><i class="fa-solid fa-medal"></i> 모든레벨</td>
+			                    <td style="text-align:left"><i class="fa-solid fa-children"></i> 5명</td>
+			                  </tr>
+			                </tbody>
+			              </table> 			              	
+			               </div><hr>   
+			               <div style="height: 150px; margin:5%;">
+			               동탄 치동천 런닝해요 <br/>
+			               8월5일 오후 6시 까지  치동천3교 다리 위에서 모입시다  
+			               </div>
+			               <div style="text-align:center; display:block; margin:10px">
+			               <a href=# style="display:inline-block; background:red; border-radius:5px;  color:#ffffff; padding: 10px 30px;">
+			               <p style="font-weight:bold; font-size:17px;">참가하기</p><p>신청 마감까지 1자리 남았습니다</p>			              
+			               </a></div>
+			               <div style="text-align : center;" title="카카오톡 공유하기">
+			               <a href=#><img src="css/img/kakaotalk_sharing_btn_medium.png" alt="" width="30"></a>
+			               </div>	<hr>	                			                
+				             <div class="form-send w3-left m-3">
+				               <button class="btn btn-light"><a href="with_board">목록</a></button>
+				             </div>
+				             <div class="form-send w3-right m-3">
+				               <button type="submit" class="btn btn-theme"><a href="with_board_modify">수정</a></button>
+				               <button type="submit" class="btn btn-theme">삭제</button>
+				             </div>
+				             <div class="room-box">
+					             <div>
+					             	<div style="font-weight:bold;">댓글</div>
+					             	<div class="m-1">
+						                <textarea class="form-control" placeholder="Your Message" rows="3" data-rule="required"></textarea>
+						                <div class="validate"></div>
+						             </div>
+					             	<div class="w3-right">
+					             	<button type="submit" class="btn btn-theme btn-sm">등록</button>
+					             	</div>
+					             </div>
+				             </div>
+			              </form>	
 						</div>
 						<!-- page end-->
 					</div>
@@ -330,54 +281,25 @@ const contact = () => {
 	</section>
 	<!-- js placed at the end of the document so the pages load faster -->
 	<script src="lib/jquery/jquery.min.js"></script>
-	<script type="text/javascript" language="javascript"
-		src="lib/advanced-datatable/js/jquery.js"></script>
+	<script type="text/javascript" language="javascript" src="lib/advanced-datatable/js/jquery.js"></script>
 	<script src="lib/bootstrap/js/bootstrap.min.js"></script>
-	<script class="include" type="text/javascript"
-		src="lib/jquery.dcjqaccordion.2.7.js"></script>
+	<script class="include" type="text/javascript" src="lib/jquery.dcjqaccordion.2.7.js"></script>
 	<script src="lib/jquery.scrollTo.min.js"></script>
 	<script src="lib/jquery.nicescroll.js" type="text/javascript"></script>
-	<script type="text/javascript" language="javascript"
-		src="lib/advanced-datatable/js/jquery.dataTables.js"></script>
-	<script type="text/javascript"
-		src="lib/advanced-datatable/js/DT_bootstrap.js"></script>
+	<script type="text/javascript" language="javascript" src="lib/advanced-datatable/js/jquery.dataTables.js"></script>
+	<script type="text/javascript" src="lib/advanced-datatable/js/DT_bootstrap.js"></script>
 	<!--common script for all pages-->
 	<script src="lib/common-scripts.js"></script>
 	<!--script for this page-->
-
-	<script type="text/javascript">
-		$(document).ready(
-				function() {
-					/*
-					 * Insert a 'details' column to the table
-					 */
-					var nCloneTh = document.createElement('th');
-					var nCloneTd = document.createElement('td');
-					nCloneTd.className = "center";
-
-					$('#hidden-table-info thead tr').each(function() {
-						this.insertBefore(nCloneTh, this.childNodes[0]);
-					});
-
-					$('#hidden-table-info tbody tr').each(
-							function() {
-								this.insertBefore(nCloneTd.cloneNode(true),
-										this.childNodes[0]);
-							});
-
-					/*
-					 * Initialse DataTables, with no sorting on the 'details' column
-					 */
-					var oTable = $('#hidden-table-info').dataTable({
-						"aoColumnDefs" : [ {
-							"bSortable" : false,
-							"aTargets" : [ 0 ]
-						} ],
-						"aaSorting" : [ [ 1, 'asc' ] ]
-					});
-				});
-	</script>
+	  <script src="lib/jquery-ui-1.9.2.custom.min.js"></script>
+	  <script type="text/javascript" src="lib/bootstrap-fileupload/bootstrap-fileupload.js"></script>
+	  <script type="text/javascript" src="lib/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+	  <script type="text/javascript" src="lib/bootstrap-daterangepicker/date.js"></script>
+	  <script type="text/javascript" src="lib/bootstrap-daterangepicker/daterangepicker.js"></script>
+	  <script type="text/javascript" src="lib/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js"></script>
+	  <script type="text/javascript" src="lib/bootstrap-daterangepicker/moment.min.js"></script>
+	  <script type="text/javascript" src="lib/bootstrap-timepicker/js/bootstrap-timepicker.js"></script>
+	  <script src="lib/advanced-form-components.js"></script>
 
 </body>
-
 </html>

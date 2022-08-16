@@ -188,7 +188,7 @@ const contact = () => {
         	<div class="btn-group">
         		<button type="button" class="btn btn-theme">검색</button>
         	</div>
-        	
+        	<button type="button" class="btn pull-right btn-theme btn-lg"><a href="real_time_share_write">+쓰기</a></button>
         </div>
         <div class="row mt">
           <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 desc">
@@ -196,7 +196,7 @@ const contact = () => {
               <div class="project">
                 <div class="photo-wrapper">
                   <div class="photo">
-                    <a class="fancybox" href="img/portfolio/port04.jpg"><img class="img-responsive" src="img/portfolio/port04.jpg" alt=""></a>
+                    <a class="fancybox" href="real_time_share_view"><img class="img-responsive" src="img/portfolio/port04.jpg" alt=""></a>
                   </div>
                   <div class="overlay"></div>
                 </div>

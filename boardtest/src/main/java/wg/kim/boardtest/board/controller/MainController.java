@@ -70,6 +70,24 @@ public class MainController {
 
         return "with_board";
     }
+	@GetMapping("/with_board_write")
+    public String with_board_write() {
+        System.out.println("with_board_write메서드 이동 ");
+
+        return "with_board_write";
+    }
+	@GetMapping("/with_board_view")
+    public String with_board_view() {
+        System.out.println("with_board_view메서드 이동 ");
+
+        return "with_board_view";
+    }
+	@GetMapping("/with_board_modify")
+    public String with_board_modify() {
+        System.out.println("with_board_modify메서드 이동 ");
+
+        return "with_board_modify";
+    }
 	@GetMapping("/healthmap")
     public String healthmap() {
         System.out.println("healthmap메서드 이동 ");
@@ -82,11 +100,47 @@ public class MainController {
 
         return "real_time_share";
     }
+	@GetMapping("/real_time_share_write")
+    public String real_time_share_write() {
+        System.out.println("real_time_share_write메서드 이동 ");
+
+        return "real_time_share_write";
+    }
+	@GetMapping("/real_time_share_view")
+    public String real_time_share_view() {
+        System.out.println("real_time_share_view메서드 이동 ");
+
+        return "real_time_share_view";
+    }
+	@GetMapping("/real_time_share_modify")
+    public String real_time_share_modify() {
+        System.out.println("real_time_share_modify메서드 이동 ");
+
+        return "real_time_share_modify";
+    }
 	@GetMapping("/free_board")
     public String free_board() {
         System.out.println("free_board메서드 이동 ");
 
         return "free_board";
+    }
+	@GetMapping("/free_board_write")
+    public String free_board_write() {
+        System.out.println("free_board_write메서드 이동 ");
+
+        return "free_board_write";
+    }
+	@GetMapping("/free_board_view")
+    public String free_board_view() {
+        System.out.println("free_board_view메서드 이동 ");
+
+        return "free_board_view";
+    }
+	@GetMapping("/free_board_modify")
+    public String free_board_modify() {
+        System.out.println("free_board_modify메서드 이동 ");
+
+        return "free_board_modify";
     }
 	@GetMapping("/pswfind")
     public String pswfind() {
