@@ -134,57 +134,77 @@ const contact = () => {
         <h3><i class="fa fa-angle-right"></i>대회 소식</h3>
         <div class=" col-lg-12">
     		<div class="mt-4">
-            <div class="content-panel">
+            <div class="content-panel ">
 	            <div class="m-3">
 	      		<a class="btn btn-theme btn-sm m-1" href="#">전체</a>
-	      		<a class="btn btn-light btn-sm m-1" href="#">수영</a>
-	      		<a class="btn btn-light btn-sm m-1" href="#">자전거</a>
-	      		<a class="btn btn-light btn-sm m-1" href="#">철인</a>
-	      		<a class="btn btn-light btn-sm m-1" href="#">농구</a>
-	      		<a class="btn btn-light btn-sm m-1" href="#">축구</a>
-	      		<a class="btn btn-light btn-sm m-1" href="#">피트니스</a>
-	      		<a class="btn btn-light btn-sm m-1" href="#">스케이트</a>
 	      		</div>
-              <table class="table table-hover">              
+              <table class="table table-hover" style="text-align:left">              
                 <hr>
                 <thead>
                   <tr>
+                  	<th>종목</th>
                     <th>현황</th>
                     <th>대회명</th>
-                    <th>대회기간</th>
+                    <th>대회기간/참가신청 기간</th>
                     <th>보기</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>예정</td>
-                    <td>제23회 대한체육회장배 전국생활체육농구대회</td>
-                    <td>2022.11.19~2022.11.20</td>
-                    <td><button type="button" class="btn btn-theme btn-sm">자세히보기</button></td>
+                  	<td>농구</td>
+                    <td>${gameto[0].type}</td>
+                    <td>${gameto[0].title}</td>
+                    <td>${gameto[0].date}</td>
+                    <td><button type="button" class="btn btn-theme btn-sm"><a href="${gameto[0].url}" target="_blank">자세히보기</a></button></td>
                   </tr>
                   <tr>
-                    <td>예정</td>
-                    <td>제103회 전국체육대회</td>
-                    <td>2022.10.08~2022.10.13</td>
-                    <td><button type="button" class="btn btn-theme btn-sm">자세히보기</button></td>
+                  	<td>농구</td>
+                    <td>${gameto[1].type}</td>
+                    <td>${gameto[1].title}</td>
+                    <td>${gameto[1].date}</td>
+                    <td><button type="button" class="btn btn-theme btn-sm"><a href="${gameto[1].url}" target="_blank">자세히보기</a></button></td>
                   </tr>
                   <tr>
-                    <td>예정</td>
-                    <td>제22회 전국생활체육대축전 한일생활체육교류</td>
-                    <td>2022.8.27~2022.8.28</td>
-                    <td><button type="button" class="btn btn-theme btn-sm">자세히보기</button></td>
+                    <td>농구</td>
+                    <td>${gameto[2].type}</td>
+                    <td>${gameto[2].title}</td>
+                    <td>${gameto[2].date}</td>
+                    <td><button type="button" class="btn btn-theme btn-sm"><a href="${gameto[2].url}" target="_blank">자세히보기</a></button></td>
                   </tr>
-                    <tr>
-                    <td>진행중</td>
-                    <td>제148회 테니스대회</td>
-                    <td>2022.7.19~2022.8.10</td>
-                    <td><button type="button" class="btn btn-theme btn-sm">자세히보기</button></td>
+                   <tr>
+                   	<td>농구</td>
+                    <td>${gameto[3].type}</td>
+                    <td>${gameto[3].title}</td>
+                    <td>${gameto[3].date}</td>
+                    <td><button type="button" class="btn btn-theme btn-sm"><a href="${gameto[3].url}" target="_blank">자세히보기</a></button></td>
                   </tr>
-                    <tr>
-                    <td>완료</td>
-                    <td>제51회 전국소년체육대회</td>
-                    <td>2022.5.27~2022.5.31</td>
-                    <td><button type="button" class="btn btn-theme btn-sm">자세히보기</button></td>
+                   <tr>
+                   	<td>농구</td>
+                    <td>${gameto[4].type}</td>
+                    <td>${gameto[4].title}</td>
+                    <td>${gameto[4].date}</td>
+                    <td><button type="button" class="btn btn-theme btn-sm"><a href="${gameto[4].url}" target="_blank">자세히보기</a></button></td>
+                  </tr>
+                   <tr>
+                   	<td>농구</td>
+                    <td>${gameto[5].type}</td>
+                    <td>${gameto[5].title}</td>
+                    <td>${gameto[5].date}</td>
+                    <td><button type="button" class="btn btn-theme btn-sm"><a href="${gameto[5].url}" target="_blank">자세히보기</a></button></td>
+                  </tr>
+                  <tr>
+                  	<td>농구</td>
+                    <td>${gameto[6].type}</td>
+                    <td>${gameto[6].title}</td>
+                    <td>${gameto[6].date}</td>
+                    <td><button type="button" class="btn btn-theme btn-sm"><a href="${gameto[6].url}" target="_blank">자세히보기</a></button></td>
+                  </tr>
+                  <tr>
+                  	<td>농구</td>
+                    <td>${gameto[7].type}</td>
+                    <td>${gameto[7].title}</td>
+                    <td>${gameto[7].date}</td>
+                    <td><button type="button" class="btn btn-theme btn-sm"><a href="${gameto[7].url}" target="_blank">자세히보기</a></button></td>
                   </tr>
                 </tbody>
               </table>

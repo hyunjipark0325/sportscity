@@ -52,6 +52,9 @@ const with_board = () => {
 const login_contact = () => {
 	location.href("login_contact");
 }
+const mail = () => {
+	location.href("mail");
+}
 </script>
 </head>
 <body>
@@ -139,17 +142,17 @@ const login_contact = () => {
         	<div class="mt-4">
     			<div class="content-panel">
 	           	 	<div class="m-4">
-	           		<form class="validation-form" role="form" action="@{/contact}" method="POST" novalidate>
+	           		<form class="validation-form" id="contactfrm" name="contactfrm" action="/mail" method="POST" novalidate>
 		           	<label>문의유형</label>
-		           	<select class="form-select mb-3" aria-label="Default select example">
-					  <option value="1">홈페이지 관련 문의</option>
-					  <option value="2">불량 이용자 제보</option>
-					  <option value="3">건의제안</option>
-					  <option value="4">기타</option>
+		           	<select class="form-select mb-3" name="qtype" aria-label="Default select example">
+					  <option value="홈페이지 관련 문의">홈페이지 관련 문의</option>
+					  <option value="불량 이용자 제보">불량 이용자 제보</option>
+					  <option value="건의제안">건의제안</option>
+					  <option value="기타">기타</option>
 					</select>
 	            <div class="mb-3">
 	            	<label>닉네임</label>
-	                <input type="name" name="name" value="<%=nickname%>" class="form-control" id="contact-name" >
+	                <input type="name" name="name" value="<%=nickname%>" class="form-control" id="contact-name" readonly>
 	            </div>
               	<div class="mb-3">
               		<label>이메일</label>

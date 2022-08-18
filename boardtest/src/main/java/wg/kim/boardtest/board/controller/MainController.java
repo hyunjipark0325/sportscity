@@ -57,13 +57,6 @@ public class MainController {
 
         return "contact";
     }
-	
-	@GetMapping("/game")
-    public String game() {
-        System.out.println("game메서드 이동 ");
-
-        return "game";
-    }
 	@GetMapping("/with_board")
     public String with_board() {
         System.out.println("with_board메서드 이동 ");
@@ -148,7 +141,24 @@ public class MainController {
 
         return "pswfind";
     }
+	@GetMapping("/admin_main")
+    public String admin_main() {
+        System.out.println("admin_main메서드 이동 ");
 
+        return "admin_main";
+    }
+	@GetMapping("/admin_board")
+    public String admin_board() {
+        System.out.println("admin_board메서드 이동 ");
+
+        return "admin_board";
+    }
+	@GetMapping("/admin_user")
+    public String admin_user() {
+        System.out.println("admin_user메서드 이동 ");
+
+        return "admin_user";
+    }
 	 
 
 }
