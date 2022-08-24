@@ -147,18 +147,5 @@ public class MainController {
 
         return "admin_main";
     }
-	@GetMapping("/admin_board")
-    public String admin_board() {
-        System.out.println("admin_board메서드 이동 ");
-
-        return "admin_board";
-    }
-	@GetMapping("/admin_user")
-    public String admin_user() {
-        System.out.println("admin_user메서드 이동 ");
-
-        return "admin_user";
-    }
-	 
-
+	
 }

@@ -1,10 +1,7 @@
 package wg.kim.boardtest.board.dao;
 
-import java.util.List;
-
 import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
 
 @Repository

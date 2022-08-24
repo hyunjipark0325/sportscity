@@ -130,9 +130,8 @@ const login_contact = () => {
             <a href="login_contact">
               <span>문의사항</span>
             </a>
-          </li>
- 
-        </ul>
+          </li>			
+        </ul>      	 
         <!-- sidebar menu end-->
       </div>
     </aside>
@@ -528,8 +527,10 @@ const login_contact = () => {
         <p>
           &copy;<strong>2022 SPORTSCITY</strong>
         </p>
-
-        <a href="main" class="go-top">
+        <p>
+          <a href="admin_main">관리자페이지</a>
+        </p>
+        <a href="main" class="go-top w3-right">
           <i class="fa fa-angle-up"></i>
           </a>
       </div>
