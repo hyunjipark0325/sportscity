@@ -13,6 +13,10 @@ public class AdminBoardTO {
 	private String nickname;
 	private String date;
 	private String r_count;
+	private String content;
+	private String fileName;
+	private long fileSize;
+	private String hit;
 	private ArrayList<AdminBoardTO> boardLists;
 	
 }

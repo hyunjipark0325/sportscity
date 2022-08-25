@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
+
 import wg.kim.boardtest.board.dto.AdminBoardTO;
 
 @Repository
@@ -25,6 +26,19 @@ public class AdminBoardDAO {
 			return listTO;
 		}
 	
+	public AdminBoardTO boardView(AdminBoardTO to) {
+		
+		
+			String sql = "update board set hit=hit+1 where seq=?";
+			jdbcTemplate.update(sql, to.getSeq());
+			
+			sql = "select seq, title, nickname, content, filename, filesize, date_format(date, '%Y.%m.%d') date, hit, r_count from board where seq=?";
+			ArrayList<AdminBoardTO> lists = (ArrayList<AdminBoardTO>)jdbcTemplate.query(
+					sql, new Object[] {to.getSeq()}, new BeanPropertyRowMapper<AdminBoardTO>(AdminBoardTO.class));
+					to.setBoardLists(lists);
+			return to;
+		}
+			
 
 	
 	public int UserDeleteOk(AdminBoardTO to) {
@@ -70,9 +84,10 @@ public class AdminBoardDAO {
 			flag = 0;
 		}
 		
-		return flag;
-	
+		return flag;	
 	}
+	
+
 
 
 }

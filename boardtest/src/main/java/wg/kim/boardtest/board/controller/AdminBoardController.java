@@ -29,6 +29,20 @@ public class AdminBoardController {
 		return modelAndView;
 	}
 	
+	@RequestMapping("/admin_board_view")
+	public ModelAndView boardView(HttpServletRequest request) {
+		String seq = request.getParameter( "seq" );
+		
+		AdminBoardTO to = new AdminBoardTO();
+		to.setSeq(seq);
+		
+		to = dao.boardView(to);
+
+		ModelAndView modelAndView = new ModelAndView("admin_board_view");
+		modelAndView.addObject("to", to);
+		modelAndView.addObject("seq", seq);
+		return modelAndView;
+	}
 	
 	@RequestMapping("/admin_board_delete_ok")
 	public ModelAndView deleteOk(HttpServletRequest request) {
@@ -69,6 +83,8 @@ public class AdminBoardController {
 		modelAndView.addObject("flag", flag);
 		return modelAndView;
 	}
+	
+
 	
 	
 

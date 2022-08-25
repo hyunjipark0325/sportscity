@@ -11,39 +11,47 @@
 <%@ page import = "java.util.ArrayList" %>
 <%
 
-	AdminBoardTO listTO = (AdminBoardTO)request.getAttribute("listTO");
+AdminBoardTO To = (AdminBoardTO)request.getAttribute("to");
 
-	
-	ArrayList<AdminBoardTO> lists = listTO.getBoardLists();
-	
-	
-	
-	StringBuilder sbHtml = new StringBuilder();
-	for(AdminBoardTO to : lists) {
-		String seq = to.getSeq();	
-		String title = to.getTitle();	
-		String usernickname = to.getNickname();
-		String date = to.getDate();
-		String r_count = to.getR_count();
-	
+ArrayList<AdminBoardTO> lists = To.getBoardLists();
 
-		sbHtml.append( "<tr>");
-		sbHtml.append( "<td>" +seq+ "</td>" );
-		sbHtml.append( "<td>" +title+ "</td>" );
-		sbHtml.append( "<td>" +usernickname+ "</td>" );
-		sbHtml.append( "<td>" +date+ "</td>" );;
-		sbHtml.append( "<td>" +r_count+ "</td>" );
-		sbHtml.append( "<td>" );
-		sbHtml.append( "<button>");
-		sbHtml.append("<a href='admin_board_view?seq=" + seq +"'>보기</a>" );
-		sbHtml.append( "</button>");
-		sbHtml.append( "<button>");
-		sbHtml.append("<a href='admin_board_delete_ok?seq=" + seq +"'>삭제</a>" );
-		sbHtml.append( "</button>");		
-		sbHtml.append( "</td>" );
-		sbHtml.append( "</tr>");
-	}
+
+StringBuilder sbHtml = new StringBuilder();
+
+for(AdminBoardTO to : lists) {
+	String seq = to.getSeq();
+	String title = to.getTitle();	
+	String usernickname = to.getNickname();
+	String content = to.getContent();
+	String date = to.getDate();
+	String r_count = to.getR_count();
+	String hit = to.getHit();
+	String filename = to.getFileName();
+
+	sbHtml.append( "<div>");
+	sbHtml.append( "<h3>" +title+  "</h3>" );
+	sbHtml.append( "<div><b><span>" +usernickname+  "&nbsp;</span><span>/&nbsp;" +date+  "/&nbsp;</span><span>&nbsp;조회수" +hit+  "/&nbsp;</span><span>&nbsp;댓글" +r_count+  "</span></b></div><hr>");
+	sbHtml.append( "<div style='height: 250px; margin:5%;'>"+content+"<br />");
+	sbHtml.append( "<img src='img/"+filename+"' width='600'' />");
+	sbHtml.append( "</div><hr>");
+	sbHtml.append( "<div class='form-send w3-left m-3'>");
+	sbHtml.append( " <button class='btn btn-light'><a href='admin_board'>목록</a></button>");
+	sbHtml.append( "</div>   ");
+	sbHtml.append( "<div class='form-send w3-right m-3'>");
+	sbHtml.append( " <button class='btn btn-theme'><a href='admin_board_delete_ok?seq=" + seq +"'>삭제</a></button>");
+	sbHtml.append( "</div>   ");
+	sbHtml.append( " <div class='room-box'>");
+	sbHtml.append( "<div>");
+	sbHtml.append( "<div style='font-weight:bold;'>댓글</div>");
+	sbHtml.append( "<div class='m-1'>");
+	sbHtml.append( "<textarea class='form-control' placeholder='Your Message' rows='3'></textarea>");
+	sbHtml.append( "<div class='validate'></div>");
+	sbHtml.append( "</div>");
+	sbHtml.append( "</div>");
+	sbHtml.append( "</div>");
+}     
 %>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -141,38 +149,19 @@ const admin_main = () => {
 		<section id="main-content">
 			<section class="wrapper">
 				<h3>
-					<i class="fa fa-angle-right"></i>게시판관리
+					<i class="fa fa-angle-right"></i>자유게시판
 				</h3>
+				<div class="col-lg-8">
 					<div class="row mb">
 						<!-- page start-->
 						<div class="content-panel">
-						<div class="m-3">
-						<button type="button" class="btn btn-theme btn-lg"><a href="admin_board">자유 게시판</a></button>
-						<button type="button" class="btn btn-theme btn-lg"><a href="admin_board">실시간 공유 게시판</a></button>
-						<button type="button" class="btn btn-theme btn-lg"><a href="admin_board">같이의 가치 게시판</a></button>
-						</div>
-							<div class="adv-table">
-								<table cellpadding="0" cellspacing="0" border="0"
-									class="table table-striped table-advance table-hover"
-									id="hidden-table-info">
-									<thead>
-										<tr>
-											<th>글번호</th>
-											<th>제목</th>
-											<th>닉네임</th>
-											<th>작성날짜</th>
-											<th>댓글</th>
-											<th>보기/삭제</th>
-										</tr>
-									</thead>
-									<tbody>
-											<%= sbHtml.toString() %>
-									</tbody>
-								</table>
-							</div>			
+						<form action="#" class="form-horizontal style-form validation-form" method="" novalidate>
+			                <%= sbHtml.toString() %>
+			              </form>	
 						</div>
 						<!-- page end-->
 					</div>
+				</div>
 			</section>
 			<!-- /wrapper -->
 		</section>
